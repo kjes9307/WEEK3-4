@@ -1,0 +1,290 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.mainFont {
+  font-size: 80px;
+  line-height: 95px;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.subFont {
+  font-size: 32px;
+  line-height: 48px;
+  font-family: "PingFang TC";
+  font-weight: bold;
+  display: inline-block;
+}
+
+.engSubFont {
+  color: #A00404;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "SF Pro Text";
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.photo {
+  border-top: 2px solid #000;
+}
+
+.photo img {
+  width: 324px;
+  height: 324px;
+  vertical-align: middle;
+  margin: 48px 0px;
+}
+
+.titleMargin {
+  margin-bottom: 8px;
+}
+
+.contentBorder {
+  border-top: 1px solid #000;
+}
+
+.profile {
+  margin-bottom: 64px;
+}
+
+.profile span {
+  color: #A00404;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "SF Pro Text";
+  font-weight: bold;
+}
+
+.profile #name {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.profile li {
+  line-height: 36px;
+  font-size: 24px;
+}
+
+.education {
+  margin-bottom: 64px;
+}
+
+.education span {
+  color: #A00404;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "SF Pro Text";
+  font-weight: bold;
+}
+
+.education li {
+  margin-top: 16px;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+.skill {
+  background-color: #415165;
+  color: white;
+  text-align: left;
+  margin-bottom: 64px;
+}
+
+.skill .contentBorder {
+  border-top: 1px solid #fff;
+}
+
+.skill .subTitle {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  line-height: 48px;
+  font-size: 32px;
+  padding-left: 522px;
+}
+
+.skill span {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "SF Pro Text";
+  font-weight: bold;
+}
+
+.skill .itemSet {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 492px;
+}
+
+.skill ul {
+  border-left: 1px solid #96A9C4;
+}
+
+.skill li {
+  line-height: 36px;
+  font-size: 24px;
+  margin-left: 24px;
+}
+
+.skill .li-m0 {
+  margin-top: 8px;
+}
+
+.workExp {
+  margin-bottom: 80px;
+}
+
+.workExp span {
+  color: #A00404;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "SF Pro Text";
+  font-weight: bold;
+}
+
+.workExp .itemSet {
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
+.workExp ul {
+  border-left: 1px solid #96A9C4;
+}
+
+.workExp li {
+  margin-left: 24px;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: Bold;
+}
+
+.workExp .li-m3 {
+  margin-top: 24px;
+}
+
+.workExp .logo {
+  background: url("./Group6.png");
+  width: 100px;
+  height: 100px;
+  margin-left: 24px;
+}
+
+.workExp .logo2 {
+  background: url("./Group7.png");
+  width: 100px;
+  height: 100px;
+  margin-left: 24px;
+}
+
+.workExp .info {
+  margin-left: 24px;
+  width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.contact {
+  background-color: #415165;
+  color: white;
+  text-align: center;
+}
+
+.contact .subTitle {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  line-height: 48px;
+  font-size: 32px;
+}
+
+.contact span {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "SF Pro Text";
+  font-weight: bold;
+}
+
+.contact ul {
+  padding-bottom: 40px;
+  padding-top: 24px;
+}
+
+.contact li {
+  line-height: 36px;
+  font-size: 24px;
+  margin-left: 24px;
+}
+
+.contact .li-m2 {
+  margin-top: 16px;
+}
+
+.contact img {
+  vertical-align: middle;
+  height: 48px;
+  width: 48px;
+}
+
+.contact .img-m3 {
+  margin-left: 24px;
+}
+/*# sourceMappingURL=index.css.map */

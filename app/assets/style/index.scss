@@ -1,0 +1,213 @@
+@import "reset";
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+$bgColor : #415165;
+$subTitleColor : #A00404;
+$unitLength : 8px;
+$unitLineWidth: 1px ;
+$alphaBetSize : 8px;
+$constant: 0px;
+$logo: url("../assets/Group6.png");
+$logo2: url("../assets/Group7.png");
+
+// 字體大小
+.mainFont{
+    font-size: $alphaBetSize * 10;
+    line-height: 95px;
+    margin-top: $unitLength * 5;
+    margin-bottom: $unitLength * 3;
+}
+.subFont{
+    font-size:  $alphaBetSize * 4;
+    line-height: $unitLength * 6;
+    font-weight: bold;
+    display: inline-block;
+}
+.engSubFont{
+    color: $subTitleColor;
+    font-size:  $alphaBetSize * 3;
+    line-height: $unitLength * 4.5;
+    font-weight: bold;
+}
+// 容器
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+// 個人照
+.photo{
+    border-top: 2px solid #000;
+    img{
+        width: 324px;
+        height: 324px;
+        vertical-align: middle;
+        margin: $unitLength*6 $constant;
+    }
+}
+// title margin & title 底線
+.titleMargin{
+    margin-bottom: $unitLength;
+}
+.contentBorder{
+    border-top: 1px solid #000;
+}
+// profile 區塊
+.profile{
+    margin-bottom: $unitLength * 8;
+    span{
+        color: $subTitleColor;
+        font-size:  $alphaBetSize * 3;
+        line-height: $unitLength * 4.5;
+        font-weight: bold;
+    }
+    #name{
+        margin-top: $unitLength * 2;
+        margin-bottom: $unitLength * 3;
+    }
+    li{
+        line-height: $unitLength * 4.5;
+        font-size: $alphaBetSize * 3;   
+    } 
+}
+// 學歷
+.education{
+    margin-bottom: $unitLength * 8;
+    span{
+        color: $subTitleColor;
+        font-size: $alphaBetSize * 3;
+        line-height: $unitLength * 4.5;
+        font-weight: bold;
+    }
+    li{
+        margin-top: $unitLength * 2;
+        line-height: $unitLength * 4.5;
+        font-size: $alphaBetSize * 3;
+    }
+}
+// skill
+// Note : 被container填滿所以margin 無法填充距離 => 使用padding
+.skill{
+    background-color: $bgColor;
+    color: white;
+    text-align: left;
+    margin-bottom: $unitLength * 8;
+    .contentBorder{
+        border-top: 1px solid #fff;
+    }
+    .subTitle{
+        padding-top: $unitLength * 3;
+        padding-bottom: $unitLength * 1;
+        line-height: $unitLength * 6 ; 
+        font-size: $alphaBetSize * 4;
+        padding-left: 522px;
+    }
+    span{
+        font-size: $alphaBetSize * 3;
+        line-height: $unitLength * 4.5;
+        font-weight: bold;
+    }
+    .itemSet{
+        padding-top: $unitLength * 5;
+        padding-bottom: $unitLength * 5;
+        padding-left: 492px;
+    }
+    ul{
+        border-left: 1px solid #96A9C4;
+    }
+    li{
+        line-height: $unitLength * 4.5;
+        font-size: $alphaBetSize * 3;
+        margin-left: $unitLength * 3;
+    }
+    .li-m0{
+        margin-top: $unitLength;
+    }
+}
+
+.workExp{
+    margin-bottom: $unitLength * 10;
+    span{
+        color: $subTitleColor;
+        font-size: $alphaBetSize * 3;
+        line-height: $unitLength * 4.5;
+        font-weight: bold;
+    }
+    .itemSet{
+        margin-left: 24px;
+        margin-top: $unitLength * 2;
+    }
+    ul{
+        border-left: 1px solid #96A9C4;
+    }
+    li{
+        margin-left: $unitLength * 3;
+        line-height: $unitLength * 4.5;
+        font-size: $alphaBetSize * 3;
+        font-weight: bold;
+    }
+    .li-m3{
+        margin-top: $unitLength * 3;
+    }
+    .logo{
+        background: $logo;
+        width: 100px;
+        height: 100px;
+        margin-left: $unitLength * 3;
+
+    }
+    .logo2{
+        background: $logo2;
+        width: 100px;
+        height: 100px;
+        margin-left: $unitLength * 3;
+
+    }
+    .info{
+        margin-left: $unitLength * 3;
+        width: 642px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.contact{
+    background-color: $bgColor;
+    color: white;
+    text-align: center;
+    .subTitle{
+        padding-top: $unitLength * 3;
+        padding-bottom: $unitLength * 1;
+        line-height: $unitLength * 6 ; 
+        font-size: $alphaBetSize * 4;
+    }
+    span{
+        font-size: $alphaBetSize * 3;
+        line-height: $unitLength * 4.5;
+        font-weight: bold;
+    }
+    ul{
+        padding-bottom: $unitLength * 5;
+        padding-top: $unitLength * 3;
+    }
+    li{
+        line-height: $unitLength * 4.5;
+        font-size: $alphaBetSize * 3;
+        margin-left: $unitLength * 3;
+    }
+    .li-m2{
+        margin-top: $unitLength * 2;
+    }
+    img{
+        vertical-align: middle;
+        height: 48px;
+        width: 48px;
+    }
+    .img-m3{
+        margin-left: $unitLength * 3;
+    }
+}
