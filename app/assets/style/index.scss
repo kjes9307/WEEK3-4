@@ -3,7 +3,9 @@
 @import "variable";
 @import "selfclass";
 
-
+.icon-size{
+    font-size: 36px !important;
+}
 .background{
     background-color: $bgColor;
 }
@@ -108,6 +110,9 @@
 
 
 @media(max-width:720px){
+    .icon-size{
+        font-size: 18px !important;
+    }
     .container{
         max-width: 375px;
         padding-left: 15px;
