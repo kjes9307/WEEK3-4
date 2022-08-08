@@ -60,9 +60,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-img {
   vertical-align: middle;
 }
 
@@ -496,7 +493,7 @@ a {
 
 .brand-banner {
   background-image: url("../../assets/images/home-header.png");
-  height: 768px;
+  height: 787px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -511,10 +508,17 @@ a {
           align-items: center;
 }
 
+.main-title-color {
+  color: #650300;
+}
+
+.sub-title-color {
+  color: #AA0601;
+}
+
 .intro {
   width: 100%;
   text-align: right;
-  color: #650300;
 }
 
 .intro span {
@@ -525,6 +529,10 @@ a {
 
 .title {
   text-align: center;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .service {
@@ -643,12 +651,12 @@ a {
 }
 
 .feedback .feedback-item {
-  width: 23%;
+  width: 24%;
   -webkit-box-shadow: 0px 2px 6px #00000029;
           box-shadow: 0px 2px 6px #00000029;
 }
 
-.feedback .text-area h4 {
+.feedback .text-area h6 {
   padding-right: 16px;
   padding-left: 16px;
   padding-top: 16px;
@@ -665,10 +673,14 @@ a {
   padding-left: 16px;
   padding-top: 72px;
   padding-bottom: 16px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #707070;
 }
 
 .contact {
   width: 39.8%;
+  padding-bottom: 80px;
 }
 
 .contact .form-control {
@@ -679,6 +691,47 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 24px;
+}
+
+.contact input {
+  margin-top: 8px;
+  height: 36px;
+}
+
+.contact textarea {
+  margin-top: 8px;
+  height: 136px;
+  color: #333;
+}
+
+.contact label:not(:first-child) {
+  margin-top: 22px;
+}
+
+.contact .checked-box {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 24px;
+}
+
+.contact button {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 48px;
+  width: 416px;
+  height: 56px;
+  margin-left: 109px;
+  margin-right: 109px;
+  background-color: #AA0601;
+  cursor: pointer;
+  border: 0px solid #fff;
 }
 
 .icon-size {
