@@ -1,103 +1,18 @@
-@import "./base/customereset";
 @import "./base/reset";
+@import "./base/customereset";
 @import "./abstracts/variable";
 @import "./abstracts/selfclass";
 @import "./layout/style";
+@import "./pages/intro";
 
 .icon-size{
     font-size: 36px !important;
 }
-.background{
-    background-color: $bgColor;
-}
-// 容器
-.container{
-    max-width: 1320px;
-    margin: 0 auto;
-    padding-left: 12px;
-    padding-right: 12px;
-}
 
 
-@media(max-width:992px){
-    .container{
-        max-width: 720px;
-    }
-    .footer{
-        .title{
-            & img:not(:first-child){
-                margin-left: $unitLength*2;
-            }  
-            & img{
-                width: 24px;
-                height: 24px;
-            }
-        }
-    }
-}
 
 
-@media(max-width:768px){
-    .icon-size{
-        font-size: 18px !important;
-    }
-    .container{
-        max-width: 372px;
-    }
-    .header{
-        padding-top: 0px;
-        padding-bottom: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        & .logo{
-            margin-bottom: 15px;
-            margin-top: 16px;
-        }
-        & ul{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            text-align: center;
-            & li{
-                width: 50%;
-                border: 1px solid #fff;
-            }
-        }
-        & ul li:not(:first-child){
-            margin-left: 0px;
-        }
-    }
-    .footer{
-        .title{
-            padding-top: $unitLength*3;
-            ul{
-                display: none;
-            }
-        }
-        .h2{
-            font-size: $alphaBetSize * 2;
-            line-height: $alphaBetSize * 3;
-        }
-        .info{
-            display: block;
-            width: 100%;
-            & ul{
-                display: block;
-            }
-            & ul li:not(:first-child){
-                margin-left: 0px;
-            }
-        }
-        .layout{
-            width: 100%;
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-    }
-}
+
 
 
 
