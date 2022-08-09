@@ -164,8 +164,11 @@
     }
 }
 .contact-us{
-    width: 38%;
+    width: 100%;
     padding-bottom: $unitLength*10;
+    .content{
+        width: 49%;
+    }
     .title{
         padding-bottom: $unitLength*6;
         padding-top: $unitLength*10;
@@ -254,8 +257,10 @@
         }
     }
     .contact-us{
-        width: 80%;
         padding-bottom: $unitLength*5;
+        .content{
+            width: 83%;
+        }
         button{
             width: 336px;
         }
@@ -343,7 +348,9 @@
         }
     }
     .contact-us{
-        width: 100%;
+        .content{
+            width: 100%;
+        }
         button{
             width: 348px;
         }

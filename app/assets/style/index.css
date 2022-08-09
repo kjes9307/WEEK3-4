@@ -235,10 +235,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .background {
@@ -762,8 +758,12 @@ a {
 }
 
 .contact-us {
-  width: 38%;
+  width: 100%;
   padding-bottom: 80px;
+}
+
+.contact-us .content {
+  width: 49%;
 }
 
 .contact-us .title {
@@ -875,8 +875,10 @@ a {
        object-fit: cover;
   }
   .contact-us {
-    width: 80%;
     padding-bottom: 40px;
+  }
+  .contact-us .content {
+    width: 83%;
   }
   .contact-us button {
     width: 336px;
@@ -957,7 +959,7 @@ a {
   .feedback .feedback-item {
     width: 100%;
   }
-  .contact-us {
+  .contact-us .content {
     width: 100%;
   }
   .contact-us button {
