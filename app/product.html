@@ -9,6 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' rel="stylesheet" />
+    <script type="text/javascript">
+        window.onload = () =>{     
+            var icon = document.getElementsByClassName('ham-icon')[0]
+            var menu = document.getElementsByClassName('dropdown')[0]
+            icon.onclick = (e)=>{
+                e.preventDefault()
+                console.log("@")
+                menu.classList.toggle('active')
+            }  
+        }
+    </script>
 </head>
 <body>
     <div class="background">
@@ -16,12 +28,23 @@
             <div class="logo">
                 <a>眼鏡公司</a>
             </div>
-            <ul class="h5">
+            <ul class="navbar h5">
                 <li><a href="#series">系列鏡框</a></li>
                 <li><a href="#location">門市據點</a></li>
                 <li><a href="#blog">部落格</a></li>
                 <li><a href="#issue">常見問題</a></li>
             </ul>
+            <div class="toggle-dropdown">
+                <a href="#" class="ham-icon">
+                    <i class="fas fa-bars fa-2x"></i>
+                  </a>
+                  <ul class="dropdown h5">
+                    <li><a href="#">系列鏡框</a></li>
+                    <li><a href="#">門市據點</a></li>
+                    <li><a href="#">部落格</a></li>
+                    <li><a href="#">常見問題</a></li>
+                  </ul>
+            </div>
         </div>
     </div>
     <div class="nav">

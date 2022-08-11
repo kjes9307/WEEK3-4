@@ -19,13 +19,14 @@
     display: flex;
     justify-content: space-between;
     color: #fff;
-    & ul{
+    .navbar{
         display: flex;
         align-items: center;
+        & li:not(:first-child){
+            margin-left: $unitLength*8;
+        }
     }
-    & ul li:not(:first-child){
-        margin-left: $unitLength*8;
-    }
+    
     & .logo{
         background-image: url("../images/logo-new@2x.png");
         background-position: center center;
@@ -47,6 +48,9 @@
     }
     & a:hover{
         color: #f24;
+    }
+    .toggle-dropdown{
+        display: none;
     }
 }
 .footer{
@@ -133,24 +137,23 @@
         padding-top: 0px;
         padding-bottom: 0px;
         display: flex;
-        flex-direction: column;
         align-items: center;
+        position: relative;
         & .logo{
             margin-bottom: 15px;
             margin-top: 16px;
         }
-        & ul{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            text-align: center;
-            & li{
-                width: 50%;
-                border: 1px solid #fff;
+        .navbar{
+            display: none;
+            & li:not(:first-child){
+                margin-left: 0px;
             }
         }
-        & ul li:not(:first-child){
-            margin-left: 0px;
+        .toggle-dropdown{
+            display: block;
+            position: relative;
+            width: 70%;
+            text-align: right;
         }
     }
     .footer{
